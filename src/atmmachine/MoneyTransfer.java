@@ -1,4 +1,4 @@
-		package atmmachine;
+package atmmachine;
 
 import java.util.*;
 import org.apache.logging.log4j.Logger;
@@ -10,10 +10,11 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import atmmachine.*;
 
-		public class MoneyTransfer {
-			static final Logger logger = LogManager.getLogger(MoneyTransfer.class.getName());
-			int temporary;
-			void transfer(int acc_no)
+public class MoneyTransfer {
+	static final Logger logger = LogManager.getLogger(MoneyTransfer.class.getName());
+	int temporary;
+
+	void transfer(int acc_no)
 			{
 				Receipt r1 = new Receipt();
 				ATM_Machine a1 = new ATM_Machine();
@@ -44,7 +45,8 @@ import atmmachine.*;
 			
 				amt=amtobj.nextInt();  //Amount to be transfered
 				}catch(Exception e)
-				{
+				{logger.debug(acc_no+"Overflow Error");
+				logger.info("overflow error");
 					System.out.println("Transfer Limit is ₹1,00,000");	
 				}
 					if(amt<=0 || amt >=100000)
@@ -86,6 +88,13 @@ import atmmachine.*;
 				System.out.print("Please Enter beneficiary account number\n");
 				Scanner receiver_acc_numberobj=new Scanner(System.in);
 				receiver_acc_number=receiver_acc_numberobj.nextInt();
+				if(receiver_acc_number==sender_acc_number)
+				{
+					System.out.println("Can't Enter own Account Number ");
+					continue;
+				}
+				else
+				{
 				ResultSet rs2=stmt.executeQuery("select account_balance from account where account_no='"+receiver_acc_number+"'");
 				if(!(rs2.next()))
 				{
@@ -124,7 +133,7 @@ import atmmachine.*;
 			    		r.next();
 			    		this.temporary=r.getInt(1); 
 			    		r1.receipt(temporary, 3, sender_acc_number); //call receipt function to print receipt
-				   }
+				   }}
 				}
 				}
 			    	
@@ -137,5 +146,4 @@ import atmmachine.*;
 				}
 				
 			    }
-			}
-
+}
