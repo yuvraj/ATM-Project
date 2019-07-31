@@ -46,7 +46,7 @@ public class MoneyTransfer {
 				amt=amtobj.nextInt();  //Amount to be transfered
 				}catch(Exception e)
 				{logger.debug(acc_no+"Overflow Error");
-				logger.info("overflow error");
+				
 					System.out.println("Transfer Limit is ₹1,00,000");	
 				}
 					if(amt<=0 || amt >=100000)
