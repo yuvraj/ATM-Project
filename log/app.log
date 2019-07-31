@@ -1,0 +1,22 @@
+2019-07-30 23:19:48 [main] INFO  ATM_Machine:141 - User Entered Pin !!!
+2019-07-30 23:30:31 [main] INFO  ATM_Machine:141 - User Entered Pin !!!
+2019-07-30 23:32:33 [main] INFO  ATM_Machine:141 - User Entered Pin !!!
+2019-07-30 23:33:39 [main] INFO  ATM_Machine:141 - User Entered Pin !!!
+2019-07-30 23:34:03 [main] INFO  ATM_Machine:141 - User Entered Pin !!!
+2019-07-30 23:39:33 [main] INFO  ATM_Machine:141 - User Entered Pin !!!
+2019-07-30 23:39:36 [main] INFO  ATM_Machine:259 - User selected Enquiry
+2019-07-30 23:39:41 [main] INFO  ATM_Machine:263 - User selected Withdrawal
+2019-07-31 11:00:54 [main] INFO  MyLog:139 - User Entered Pin !!!
+2019-07-31 11:23:40 [main] INFO  MyLog:139 - User Entered Pin !!!
+2019-07-31 11:23:42 [main] INFO  MyLog:175 - User Logged in
+2019-07-31 11:23:45 [main] INFO  MyLog:257 - User selected Enquiry
+2019-07-31 12:10:26 [main] INFO  ATM_Machine:140 - User Entered Pin !!!
+2019-07-31 12:10:56 [main] INFO  ATM_Machine:140 - User Entered Pin !!!
+2019-07-31 12:10:58 [main] INFO  ATM_Machine:176 - User Logged in
+2019-07-31 12:11:00 [main] INFO  ATM_Machine:258 - User selected Enquiry
+2019-07-31 12:11:00 [main] INFO  MyLog:46 - Receipt printed
+2019-07-31 12:50:38 [main] INFO  ATM_Machine:141 - User Entered Pin !!!
+2019-07-31 12:50:39 [main] INFO  ATM_Machine:177 - User Logged in
+2019-07-31 12:50:43 [main] INFO  ATM_Machine:259 - 1212123456 selected Enquiry
+2019-07-31 12:50:44 [main] INFO  Receipt:46 - Receipt printed
+2019-07-31 12:50:53 [main] INFO  ATM_Machine:282 - 1212123456 logged out
